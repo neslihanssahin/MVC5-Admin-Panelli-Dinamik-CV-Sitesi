@@ -21,6 +21,20 @@ Bu proje, CRUD işlemleri, güvenli erişim yönetimi ve verilerin görselleşti
 
 🔗 Projenin detaylarına ve kodlara göz atmak isterseniz, buradan ulaşabilirsiniz: [GitHub Repository](https://github.com/neslihanssahin/MVC5-Admin-Panelli-Dinamik-CV-Sitesi)
 
+
+![1](https://github.com/user-attachments/assets/359ea101-b198-4f0c-806e-dc2097983ffd)
+![2](https://github.com/user-attachments/assets/498b8e9a-7c17-4f43-be72-9054a9856ef7)
+![3](https://github.com/user-attachments/assets/68ee1fcd-c4c6-4a21-8d05-d76af916715f)
+![4](https://github.com/user-attachments/assets/a1406c24-24e9-4f2e-b704-67beb0d56409)
+![5](https://github.com/user-attachments/assets/c0b31fc5-26e5-45ce-aef4-0e4a05d01aac)
+![6](https://github.com/user-attachments/assets/ed7aa9f9-34bb-478d-9b09-e18a23c3cc33)
+![7](https://github.com/user-attachments/assets/4544eace-2b4a-4b55-a8b5-fcb7e171f7db)
+![8](https://github.com/user-attachments/assets/5b762c79-b59f-4557-b79f-c44ec6cc1d99)
+![9](https://github.com/user-attachments/assets/67b49f8c-974e-4584-9003-762f73a258b1)
+
+
+
+
 ## İletişim
 Eğer proje hakkında bir sorunuz varsa, lütfen benimle iletişime geçin!
 
