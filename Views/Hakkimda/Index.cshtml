@@ -1,0 +1,30 @@
+﻿@using MvcCv.Models.Entity
+@model List<TblHakkimda>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2  class="text-center my-4" style="background-color: #f3e5f5; color: #6a1b9a; ">Hakkımda Menüsü</h2>
+
+<div class="container">
+    @foreach (var x in Model)
+    {
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <p class="card-text"><strong>Ad-Soyad:</strong>@x.Ad @x.Soyad</p>
+                <p class="card-text"><strong>Adres:</strong> @x.Adres</p>
+                <p class="card-text"><strong>Telefon:</strong> @x.Telefon</p>
+                <p class="card-text"><strong>Email:</strong> @x.Mail</p>
+                <p class="card-text"><strong>Açıklama:</strong> @x.Aciklama</p>
+                <p class="card-text"><strong>Resim:</strong> @x.Resim</p>
+                <div class="text-right">
+                    <a class="btn btn-info btn-sm" href="/Hakkimda/HakkimdaDüzenle/@x.ID">
+                        <i class="fas fa-pencil-alt"></i> Düzenle
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

@@ -1,0 +1,66 @@
+﻿@using MvcCv.Models.Entity
+@model List<Tbliletisim>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <h2  class="text-center my-4" style="background-color: #f3e5f5; color: #6a1b9a; ">İletişim Mesajları</h2>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- /.col -->
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="tab-pane" id="timeline">
+                                <!-- The timeline -->
+                                <div class="timeline timeline-inverse">
+                                    @foreach (var x in Model)
+                                    {
+                                        <div class="time-label">
+                                            <span class="bg-info">
+                                                @(((DateTime)x.Tarih).ToString("dd-MMM-yyyy"))
+                                            </span>
+                                        </div>
+
+                                        <div>
+                                            <i class="fas fa-comments bg-warning"></i>
+                                            <div class="timeline-item">
+                                                <span class="time"><i class="far fa-clock"></i> @x.Mail</span>
+                                                <h3 class="timeline-header"><a href="#">@x.Adsoyad</a> @x.Konu</h3>
+                                                <div class="timeline-body">
+                                                    @x.Mesaj
+                                                </div>
+                                                <div class="timeline-footer">
+                                                    <a class="btn btn-danger btn-sm" href="/Iletisim/MesajSil/@x.ID">
+                                                        <i class="fas fa-trash">
+                                                        </i>
+                                                        Sil
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.tab-content -->
+                    </div><!-- /.card-body -->
+                </div>
+                <!-- /.nav-tabs-custom -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+﻿@using MvcCv.Models.Entity
+@model List<TblHobilerim>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br />
+<h2 class="text-center my-4" style="background-color: #f3e5f5; color: #6a1b9a;">Hobi Listesi</h2>
+<br />
+
+
+<table class="table table-bordered">
+    <tr>
+        
+
+        <th> Açıklama 1</th>
+        <th> Açıklama 2</th>
+  
+        <th>Sil</th>
+        <th>Düzenle</th>
+
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.Aciklama1</td>
+            <td>@x.Aciklama2</td>
+            <td>
+                <a class="btn btn-danger btn-sm" href="/Hobi/HobiSil/@x.ID">
+                    <i class="fas fa-trash">
+                    </i>
+                    Sil
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-info btn-sm" href="/Hobi/HobiDüzenle/@x.ID">
+                    <i class="fas fa-pencil-alt">
+                    </i>
+                    Düzenle
+                </a>
+            </td>
+
+
+        </tr>
+    }
+</table>
+<a href="/Hobi/HobiEkle" class="btn btn-primary">Yeni Hobi Ekle</a>

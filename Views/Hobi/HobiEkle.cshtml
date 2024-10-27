@@ -1,0 +1,23 @@
+﻿@model MvcCv.Models.Entity.TblHobilerim
+@{
+    ViewBag.Title = "HobiEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br />
+<br />
+<h2 class="text-center my-4" style="background-color: #f3e5f5; color: #6a1b9a;">Hobi Ekleme Sayfası</h2>
+<form method="post">
+
+    @Html.Label("Açıklama 1")
+    @Html.TextBoxFor(x => x.Aciklama1, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("Açıklama 2")
+    @Html.TextBoxFor(x => x.Aciklama2, new { @class = "form-control" })
+    <br />
+    <br />
+    <button class="btn btn-info">KAYDET</button>
+</form>
+

@@ -1,0 +1,56 @@
+﻿@using MvcCv.Models.Entity
+@model List<TblSertifikalarım>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <!-- Main content -->
+    <br />
+    <h2  class="text-center my-4" style="background-color: #f3e5f5; color: #6a1b9a; ">Sertifika Listesi</h2>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="/Sertifika/SertifikaEkle" class="btn btn-primary">Yeni Sertifika Ekle</a>
+                            <br />
+                            <br />
+                          
+                            <div class="tab-pane" id="timeline">
+                                <div class="timeline timeline-inverse">
+
+                                    @foreach (var item in Model)
+                                    {
+                                        <div class="time-label">
+                                            <a href="/Sertifika/SertifikaGetir/@item.ID" class="btn btn-info">
+                                                <span>
+                                                    @item.Tarih
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-body">
+                                                    @item.Aciklama
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
