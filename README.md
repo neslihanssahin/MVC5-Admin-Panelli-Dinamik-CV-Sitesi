@@ -31,6 +31,7 @@ Bu proje, CRUD işlemleri, güvenli erişim yönetimi ve verilerin görselleşti
 ![7](https://github.com/user-attachments/assets/4544eace-2b4a-4b55-a8b5-fcb7e171f7db)
 ![8](https://github.com/user-attachments/assets/5b762c79-b59f-4557-b79f-c44ec6cc1d99)
 ![9](https://github.com/user-attachments/assets/67b49f8c-974e-4584-9003-762f73a258b1)
+![10](https://github.com/user-attachments/assets/99e7be43-7397-4182-832b-dc4d94c47bc4)
 
 
 
